@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "wearable-som-sym-lib")(type "KiCad")(uri "${KIPRJMOD}/wearable-som-sym-lib.kicad_sym")(options "")(descr ""))
+)
