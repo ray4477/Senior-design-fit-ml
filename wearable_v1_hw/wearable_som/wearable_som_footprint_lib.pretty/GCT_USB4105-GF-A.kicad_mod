@@ -491,4 +491,15 @@
 		(solder_mask_margin 0.102)
 		(uuid "30ea548d-07b4-4773-a916-8407f1090ee6")
 	)
+	(model "C:/Users/raymo/Downloads/USB4105-GF-A/USB4105-GF-A.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )
