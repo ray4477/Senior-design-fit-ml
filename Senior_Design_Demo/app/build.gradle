@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.' +
+            'senior_design'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.senior_design"
+        minSdk 26
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //https://stackoverflow.com/questions/56027250/how-to-resolve-duplicate-class-error-in-gradle-build
+    /*
+    applicationVariants.all { variant ->
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'jsr305'
+    }*/
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    //implementation files('src/main/java/com/example/senior_design/json-simple-1.1.jar')
+    implementation files('src\\main\\java\\json-simple-1.1.jar')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    /** added because of last lecture */
+    implementation 'com.android.volley:volley:1.2.1'
+    //I added
+    //implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+    implementation 'com.jjoe64:graphview:4.2.2'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+}
