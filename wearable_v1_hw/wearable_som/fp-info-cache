@@ -1,4 +1,4 @@
-23645547942370505
+23655940248012337
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96586,6 +96586,41 @@ Varistor VF
 2
 2
 wearable_som_footprint_lib
+2171750001
+217175-0001
+Connector
+0
+10
+10
+wearable_som_footprint_lib
+2450AT18A100E_JOT
+
+2450AT18A100E 
+0
+2
+2
+wearable_som_footprint_lib
+DLF-4_1P6X0P8
+
+DLF162500LT-5028A1 
+0
+4
+4
+wearable_som_footprint_lib
+GCT_USB4105-GF-A
+
+
+0
+16
+16
+wearable_som_footprint_lib
+QFN65P300X300X84-12N
+QFN 3X3mm_2022
+Integrated Circuit
+0
+12
+12
+wearable_som_footprint_lib
 SOD2513X120N
 SOD323
 Diode
@@ -96606,3 +96641,10 @@ Integrated Circuit
 0
 3
 3
+wearable_som_footprint_lib
+XDCR_BMI270
+
+
+0
+14
+14
