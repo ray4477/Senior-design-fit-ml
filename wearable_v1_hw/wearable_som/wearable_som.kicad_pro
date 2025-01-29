@@ -58,7 +58,15 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|118300000|118800000|3544cc1f-b584-4cb4-a155-9d65e8b206fe|b8b6222d-f604-4a4b-bd48-bd10dfb5e4ef",
+        "clearance|120150000|117150000|cd7e94a3-8f5d-460f-91a2-9467f3846317|fc0fe3ec-bdd7-4107-bafb-e7b3064055fe",
+        "clearance|120150000|118800000|65a9f2e0-c4a4-48d4-9fcc-028492fa07cc|7af22120-c505-4406-a455-0af1eb89232a",
+        "hole_clearance|99850000|125615000|6ca8fe23-4f2f-48be-bd9e-9aede3de3195|28bfb9a1-4cbc-4232-90c0-40532650e655",
+        "hole_clearance|99850000|125815000|6ca8fe23-4f2f-48be-bd9e-9aede3de3195|fe8c8af6-f132-4d94-bf56-69731f67ba31",
+        "hole_clearance|99850000|131215000|29e2dd95-5b3c-4cdb-bfe2-269ca52c4dc3|893749f2-91c9-4b95-be14-7826d2b7bf0f",
+        "hole_clearance|99850000|131415000|29e2dd95-5b3c-4cdb-bfe2-269ca52c4dc3|b36ef156-3f19-402a-b6f1-3d5df63cfd47"
+      ],
       "meta": {
         "version": 2
       },
@@ -490,7 +498,7 @@
       "plot": "gerbers",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "wearable_som.step",
       "svg": "",
       "vrml": ""
     },

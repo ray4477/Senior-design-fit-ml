@@ -13865,7 +13865,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "0.1uF"
 			(at 53.721 147.193 0)
 			(effects
 				(font
@@ -16453,7 +16453,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 199.39 88.8999 0)
 			(effects
 				(font
@@ -18055,7 +18055,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2ded2cf-ae67-4120-b592-e8759c774e77")
 		(property "Reference" "C11"
-			(at 113.03 32.385 0)
+			(at 113.03 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18063,8 +18063,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 113.03 34.925 0)
+		(property "Value" "0.1uF"
+			(at 113.03 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
