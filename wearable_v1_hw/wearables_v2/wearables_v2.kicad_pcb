@@ -11350,6 +11350,39 @@
 	(dimension
 		(type aligned)
 		(layer "F.Cu")
+		(uuid "1e5201cf-b7a1-4d54-a59c-fe38c6fe3b57")
+		(pts
+			(xy 83.2 77.45) (xy 83.4 77.475)
+		)
+		(height 7.353013)
+		(gr_text "0.2016 mm"
+			(at 82.611234 82.972632 352.8749837)
+			(layer "F.Cu")
+			(uuid "1e5201cf-b7a1-4d54-a59c-fe38c6fe3b57")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Cu")
 		(uuid "6cdde16a-0212-49de-85f0-e1d30e6a0b11")
 		(pts
 			(xy 87.925 71.975) (xy 81.675 71.975)
