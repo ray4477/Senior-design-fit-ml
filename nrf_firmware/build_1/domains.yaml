@@ -1,0 +1,7 @@
+default: ble_imu_wearable
+build_dir: C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1
+domains:
+  - name: ble_imu_wearable
+    build_dir: C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/ble_imu_wearable
+flash_order:
+  - ble_imu_wearable

@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "imu_service.h": "c",
+    "uuid.h": "c"
+  }
+}

@@ -1,0 +1,13 @@
+# Target labels
+ ble_imu_wearable
+# Source files and their labels
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/CMakeFiles/ble_imu_wearable
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/CMakeFiles/ble_imu_wearable.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/CMakeFiles/ble_imu_wearable-complete.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/ble_imu_wearable-prefix/src/ble_imu_wearable-stamp/ble_imu_wearable-build.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/ble_imu_wearable-prefix/src/ble_imu_wearable-stamp/ble_imu_wearable-configure.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/ble_imu_wearable-prefix/src/ble_imu_wearable-stamp/ble_imu_wearable-download.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/ble_imu_wearable-prefix/src/ble_imu_wearable-stamp/ble_imu_wearable-install.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/ble_imu_wearable-prefix/src/ble_imu_wearable-stamp/ble_imu_wearable-mkdir.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/ble_imu_wearable-prefix/src/ble_imu_wearable-stamp/ble_imu_wearable-patch.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/wearable_v2_nrf_firmware/ble_imu_wearable/build_1/_sysbuild/sysbuild/images/ble_imu_wearable-prefix/src/ble_imu_wearable-stamp/ble_imu_wearable-update.rule
