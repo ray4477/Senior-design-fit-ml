@@ -6942,6 +6942,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 114.3) (xy 175.26 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "736945c3-821a-4968-9aa2-7c8320a60f2a")
+	)
+	(wire
+		(pts
 			(xy 214.63 142.24) (xy 214.63 144.78)
 		)
 		(stroke
@@ -7012,16 +7022,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 114.3) (xy 185.42 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83a3a61d-e129-4a7d-96d3-d40097a744aa")
-	)
-	(wire
-		(pts
 			(xy 35.56 83.82) (xy 35.56 85.09)
 		)
 		(stroke
@@ -7062,16 +7062,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 111.76) (xy 185.42 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b8412ca-f000-4738-ad41-0f66cf610e47")
-	)
-	(wire
-		(pts
 			(xy 67.31 187.325) (xy 67.31 189.23)
 		)
 		(stroke
@@ -7079,6 +7069,16 @@
 			(type default)
 		)
 		(uuid "90e7b21a-77b7-486d-9766-586dc3bbea80")
+	)
+	(wire
+		(pts
+			(xy 172.72 111.76) (xy 175.26 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9353893c-9511-4289-9a65-fdb56ea67ff1")
 	)
 	(wire
 		(pts
@@ -12345,72 +12345,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 185.42 111.76 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9dbb1f55-eda7-40c5-9cd1-62c04fca2c6b")
-		(property "Reference" "TP8"
-			(at 190.246 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "USART_RX"
-			(at 194.056 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm"
-			(at 185.42 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 185.42 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ccbdb34c-3e13-4416-a8c0-c61bf6db4bab")
-		)
-		(instances
-			(project "wearable_v2_nrf"
-				(path "/04076b6c-00f0-4736-97bb-31ddf474c7f4"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 132.08 168.91 270)
 		(unit 1)
@@ -12829,72 +12763,6 @@
 			(project "wearable_v2_nrf"
 				(path "/04076b6c-00f0-4736-97bb-31ddf474c7f4"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 185.42 114.3 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b994b878-c54f-493e-b525-1c4aea152ce5")
-		(property "Reference" "TP9"
-			(at 190.246 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "USART_TX"
-			(at 194.056 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm"
-			(at 185.42 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 185.42 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8fd211d5-a925-4283-b024-290625f65de2")
-		)
-		(instances
-			(project "wearable_v2_nrf"
-				(path "/04076b6c-00f0-4736-97bb-31ddf474c7f4"
-					(reference "TP9")
 					(unit 1)
 				)
 			)

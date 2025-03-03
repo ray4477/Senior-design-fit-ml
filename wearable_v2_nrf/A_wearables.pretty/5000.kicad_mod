@@ -1,0 +1,131 @@
+(footprint "5000"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "5000")
+	(tags "Connector")
+	(property "Reference" "J**"
+		(at -0.392 -1.99 0)
+		(layer "F.SilkS")
+		(uuid "9385f822-d62f-4e9c-865b-48d6d5aaddca")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "5000"
+		(at -0.392 -1.99 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ed043868-2f30-4f48-a2bb-863ba9626efb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b792955f-4b48-4066-8663-b1e7b887daa7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4176a823-e4ab-482f-b5c9-ac6d67c9c1a4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c0327349-1a63-4d0a-81e9-07b3c2f20caa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "487bde71-a997-4922-b81c-72956fee768f")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "a63955c2-9438-4208-8931-dc9ca463c936")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "ce672ad3-3961-4d4a-8c3a-45fb457ea0d2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.392 -1.99 0)
+		(layer "F.Fab")
+		(uuid "107eff3f-2cfb-4d26-b927-a71b54384799")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f73c43dd-d1fa-49be-8402-a6db8cd60a08")
+	)
+	(model "5000.stp"
+		(offset
+			(xyz 0 0 1.710000012)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

@@ -3212,7 +3212,7 @@
 	(footprint "Button_Switch_SMD:SW_SPST_B3SL-1002P"
 		(layer "F.Cu")
 		(uuid "40e31149-c711-401f-b940-985a2e6e9e66")
-		(at 71.225 61.6)
+		(at 141.75 37.9)
 		(descr "Middle Stroke Tactile Switch, B3SL")
 		(tags "Middle Stroke Tactile Switch")
 		(property "Reference" "SW1"
@@ -6299,7 +6299,7 @@
 	(footprint "A_wearables:2171750001"
 		(layer "F.Cu")
 		(uuid "7baf3650-98f4-41f8-9aa0-333b635f5c52")
-		(at 62.8725 74.575 -90)
+		(at 133.3975 50.875 -90)
 		(descr "217175-0001")
 		(tags "Connector")
 		(property "Reference" "J1"
@@ -6747,7 +6747,7 @@
 	(footprint "A_wearables:XDCR_BMI270"
 		(layer "F.Cu")
 		(uuid "805e9df8-5e46-4820-8685-1355d4f609fc")
-		(at 77.9125 76.875 -90)
+		(at 148.4375 53.175 -90)
 		(property "Reference" "U3"
 			(at -0.008 -2.0314 90)
 			(layer "F.SilkS")
@@ -7292,7 +7292,7 @@
 	(footprint "A_wearables:SOT95P280X145-5N"
 		(layer "F.Cu")
 		(uuid "8c71531a-7582-48fd-b0bb-f34a64075582")
-		(at 153.375 93.95)
+		(at 106.775 78.475)
 		(descr "DBV0005A")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC2"
@@ -9020,7 +9020,7 @@
 	(footprint "A_wearables:QFN50P500X500X100-33N-D"
 		(layer "F.Cu")
 		(uuid "ae8a5f21-4cde-4588-94b2-714b2aa69fe2")
-		(at 84.8 75.1)
+		(at 155.325 51.4)
 		(descr "VFQFPN is a 32 lead, 5 x 5 mm, 0.50 mm pitch")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC1"
@@ -12800,11 +12800,11 @@
 		(layer "F.Cu")
 		(uuid "1e5201cf-b7a1-4d54-a59c-fe38c6fe3b57")
 		(pts
-			(xy 83.2 77.45) (xy 83.4 77.475)
+			(xy 153.725 53.75) (xy 153.925 53.775)
 		)
 		(height 7.353013)
 		(gr_text "0.2016 mm"
-			(at 82.611234 82.972632 352.8749837)
+			(at 153.136234 59.272632 352.8749837)
 			(layer "F.Cu")
 			(uuid "1e5201cf-b7a1-4d54-a59c-fe38c6fe3b57")
 			(effects
@@ -12833,11 +12833,11 @@
 		(layer "F.Cu")
 		(uuid "6cdde16a-0212-49de-85f0-e1d30e6a0b11")
 		(pts
-			(xy 87.925 71.975) (xy 81.675 71.975)
+			(xy 158.45 48.275) (xy 152.2 48.275)
 		)
 		(height 2.574999)
 		(gr_text "6.2500 mm"
-			(at 84.8 67.600001 0)
+			(at 155.325 43.900001 0)
 			(layer "F.Cu")
 			(uuid "6cdde16a-0212-49de-85f0-e1d30e6a0b11")
 			(effects
