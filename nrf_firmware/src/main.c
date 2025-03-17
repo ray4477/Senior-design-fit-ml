@@ -57,7 +57,7 @@ void send_data_thread(void)
         gyr[0].val1, gyr[0].val2,
         gyr[1].val1, gyr[1].val2,
         gyr[2].val1, gyr[2].val2);
-		k_sleep(K_MSEC(NOTIFY_INTERVAL));
+		k_sleep(K_MSEC(5));
 	}
 }
 

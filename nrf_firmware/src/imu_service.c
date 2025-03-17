@@ -112,6 +112,8 @@ int imu_service_init(struct my_lbs_cb *callbacks) {
 
 }
 
+static uint32_t ascii_sensor_value = 0;
+static char hello_world[] = "Hello, World!";
 //send imu data to the client
 int imu_send_notify(uint32_t sensor_value)
 {
@@ -119,6 +121,10 @@ int imu_send_notify(uint32_t sensor_value)
     LOG_INF("notify boolean is false...  \n");
 		return -EACCES;
 	}
+  //x61 to x7a
+  //loop sensor value from x61 to x7a
+  
+  ascii_sensor_value = (ascii_sensor_value + 1) % 26;
 
-	return bt_gatt_notify(NULL, &imu_svc.attrs[7], &sensor_value, sizeof(sensor_value));
+	return bt_gatt_notify(NULL, &imu_svc.attrs[7], &hello_world, sizeof(hello_world));
 }
