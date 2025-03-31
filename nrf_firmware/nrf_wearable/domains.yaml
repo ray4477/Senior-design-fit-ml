@@ -1,0 +1,7 @@
+default: nrf_firmware
+build_dir: C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/nrf_wearable
+domains:
+  - name: nrf_firmware
+    build_dir: C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/nrf_wearable/nrf_firmware
+flash_order:
+  - nrf_firmware

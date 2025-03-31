@@ -1,0 +1,11 @@
+# ninja log v5
+3	275	7648944055723977	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-mkdir	834d6e2589c78b39
+3	275	7648944055723977	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/build_custom/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-mkdir	834d6e2589c78b39
+276	352	7648944056484670	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-download	bdd4cc2927a36ca
+276	352	7648944056484670	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/build_custom/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-download	bdd4cc2927a36ca
+352	439	7648944057346151	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-update	a9fe8518e2c2aa15
+352	439	7648944057346151	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/build_custom/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-update	a9fe8518e2c2aa15
+439	514	7648944058112069	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-patch	30f21e4c77e61f72
+439	514	7648944058112069	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/build_custom/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-patch	30f21e4c77e61f72
+514	596	7648944058930212	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-configure	f7d44b515800f57c
+514	596	7648944058930212	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/build_custom/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-configure	f7d44b515800f57c

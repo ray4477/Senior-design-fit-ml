@@ -4,12 +4,14 @@
 #include <zephyr/bluetooth/gap.h>
 #include <zephyr/bluetooth/uuid.h>
 #include <zephyr/bluetooth/conn.h>
-#include <dk_buttons_and_leds.h>
+// #include <dk_buttons_and_leds.h>
 
 #include "main.h"
 #include "imu_service.h"
 #include "imu_driver.h"
 LOG_MODULE_REGISTER(ble_imu_wearable, LOG_LEVEL_INF);
+
+#define LED0_NODE DT_ALIAS(led0)
 
 static uint32_t app_sensor_value = 100;
 
@@ -23,15 +25,17 @@ static void on_connected(struct bt_conn *conn, uint8_t err) {
 		return;
 	}
 
+  max_mtu_on_conn(conn);
+
 	printk("Connected\n");
 
-	dk_set_led_on(CON_STATUS_LED);
+	// dk_set_led_on(CON_STATUS_LED);
 }
 
 static void on_disconnected(struct bt_conn *conn, uint8_t reason) {
 	printk("Disconnected (reason %u)\n", reason);
 
-	dk_set_led_off(CON_STATUS_LED);
+	// dk_set_led_off(CON_STATUS_LED);
 }
 
 struct bt_conn_cb connection_callbacks = {
@@ -45,7 +49,7 @@ void send_data_thread(void)
 		/* Simulate data */
 		/* Send notification, the function sends notifications only if a client is subscribed */
     app_sensor_value = acc[0].val1;
-		if(imu_send_notify(app_sensor_value)) {
+		if(imu_send_notify(acc, gyr)) {
       LOG_ERR("Failed to send data\n");
     }
     LOG_INF("sending data... %d \n", app_sensor_value);
@@ -57,7 +61,7 @@ void send_data_thread(void)
         gyr[0].val1, gyr[0].val2,
         gyr[1].val1, gyr[1].val2,
         gyr[2].val1, gyr[2].val2);
-		k_sleep(K_MSEC(5));
+		k_sleep(K_MSEC(50));
 	}
 }
 
@@ -71,7 +75,7 @@ void collect_imu_data_thread(void)
 
 static void app_led_cb(bool led_state)
 {
-	dk_set_led(USER_LED, led_state);
+	// dk_set_led(USER_LED, led_state);
 }
 
 static bool app_button_cb(void)
@@ -92,11 +96,11 @@ int main(void)
 
 	LOG_INF("Starting Lesson 4 - Exercise 2 \n");
 
-	err = dk_leds_init();
-	if (err) {
-		LOG_ERR("LEDs init failed (err %d)\n", err);
-		return -1;
-	}
+	// err = dk_leds_init();
+	// if (err) {
+	// 	LOG_ERR("LEDs init failed (err %d)\n", err);
+	// 	return -1;
+	// }
 
   if (bmi_init()) {
     LOG_ERR("Failed to initialize IMU sensor\n");
@@ -120,7 +124,7 @@ int main(void)
   }
 
   for (;;) {
-		dk_set_led(RUN_STATUS_LED, (++blink_status) % 2);
+		// dk_set_led(RUN_STATUS_LED, (++blink_status) % 2);
 		k_sleep(K_MSEC(RUN_LED_BLINK_INTERVAL));
 	}
 

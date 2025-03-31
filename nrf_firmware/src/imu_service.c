@@ -23,6 +23,37 @@ static bool indicate_enabled;
 static bool button_state;
 static struct my_lbs_cb lbs_cb;
 
+static void exchange_func(struct bt_conn *conn, uint8_t err,
+  struct bt_gatt_exchange_params *params)
+{
+  if (!err) {
+      /* According to 3.4.7.1 Handle Value Notification off the ATT protocol.
+       * Maximum supported notification is ATT_MTU - 3 */
+      uint32_t bt_max_send_len = bt_gatt_get_mtu(conn) - 3;
+      LOG_INF("max send len is %d", bt_max_send_len);
+  }
+}
+
+// static struct bt_gatt_exchange_params {
+//   struct bt_att_req *req;
+//   void (*func)(struct bt_conn *conn, uint8_t err, struct bt_gatt_exchange_params *params);
+// };
+
+static struct bt_gatt_exchange_params exchange_params = {
+  .func = exchange_func,
+};
+static int rc = 0;
+
+void max_mtu_on_conn(struct bt_conn *current_conn) {
+  /* maximize ATT MTU at peer side (CONFIG_BT_L2CAP_TX_MTU)*/
+  exchange_params.func = exchange_func;
+  LOG_INF("sending ATT MTU to peer..");
+  rc = bt_gatt_exchange_mtu(current_conn, &exchange_params);
+  if (rc) {
+      LOG_ERR("failed to negotiate maximum mtu with peer [%d]", rc);
+  }
+}
+
 static void mylbsbc_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
 {
 	indicate_enabled = (value == BT_GATT_CCC_INDICATE);
@@ -114,17 +145,40 @@ int imu_service_init(struct my_lbs_cb *callbacks) {
 
 static uint32_t ascii_sensor_value = 0;
 static char hello_world[] = "Hello, World!";
+
+static struct wearable_packet packet;
+
 //send imu data to the client
-int imu_send_notify(uint32_t sensor_value)
+int imu_send_notify(struct sensor_value *acc, struct sensor_value *gyr) 
 {
 	if (!notify_mysensor_enabled) {
     LOG_INF("notify boolean is false...  \n");
 		return -EACCES;
 	}
+
+  packet.data.acc[0].integer = acc[0].val1;
+  packet.data.acc[0].fraction = acc[0].val2;
+  packet.data.acc[1].integer = acc[1].val1;
+  packet.data.acc[1].fraction = acc[1].val2;
+  packet.data.acc[2].integer = acc[2].val1;
+  packet.data.acc[2].fraction = acc[2].val2;
+  packet.data.gyr[0].integer = gyr[0].val1;
+  packet.data.gyr[0].fraction = gyr[0].val2;
+  packet.data.gyr[1].integer = gyr[1].val1;
+  packet.data.gyr[1].fraction = gyr[1].val2;
+  packet.data.gyr[2].integer = gyr[2].val1;
+  packet.data.gyr[2].fraction = gyr[2].val2;
+
+  packet.foot_voltage = 123;
+  packet.pos = 3;
+  LOG_INF("sent ble packet  \n");
+
+  return bt_gatt_notify(NULL, &imu_svc.attrs[7], &packet, sizeof(packet));
+
   //x61 to x7a
   //loop sensor value from x61 to x7a
   
-  ascii_sensor_value = (ascii_sensor_value + 1) % 26;
+  // ascii_sensor_value = (ascii_sensor_value + 1) % 26;
 
-	return bt_gatt_notify(NULL, &imu_svc.attrs[7], &hello_world, sizeof(hello_world));
+	// return bt_gatt_notify(NULL, &imu_svc.attrs[7], &hello_world, sizeof(hello_world));
 }

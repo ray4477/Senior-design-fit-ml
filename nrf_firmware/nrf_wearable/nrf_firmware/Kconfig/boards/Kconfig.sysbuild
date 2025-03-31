@@ -1,0 +1,2 @@
+# Load Sysbuild board Kconfig descriptions.
+osource "C:/Users/raymo/nordic/boards/fitml/nrf52811_wearable/Kconfig.sysbuild"

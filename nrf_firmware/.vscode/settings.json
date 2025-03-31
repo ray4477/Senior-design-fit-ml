@@ -9,6 +9,7 @@
     "tuple": "c",
     "type_traits": "c",
     "utility": "c",
-    "string.h": "c"
+    "string.h": "c",
+    "sensor.h": "c"
   }
 }

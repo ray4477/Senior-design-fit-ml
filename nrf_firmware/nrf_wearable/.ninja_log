@@ -1,0 +1,11 @@
+# ninja log v5
+2	222	7648949091360861	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-mkdir	4f27119158bde963
+2	222	7648949091360861	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/nrf_wearable/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-mkdir	4f27119158bde963
+225	295	7648949092073801	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-download	c7c59d6d05c82517
+225	295	7648949092073801	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/nrf_wearable/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-download	c7c59d6d05c82517
+297	365	7648949092777352	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-update	fdacd155817d8810
+297	365	7648949092777352	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/nrf_wearable/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-update	fdacd155817d8810
+366	436	7648949093487920	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-patch	3be97f318cdc77fe
+366	436	7648949093487920	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/nrf_wearable/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-patch	3be97f318cdc77fe
+437	513	7648949094250295	_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-configure	e5b93d0a4b352a0
+437	513	7648949094250295	C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/nrf_firmware/nrf_wearable/_sysbuild/sysbuild/images/nrf_firmware-prefix/src/nrf_firmware-stamp/nrf_firmware-configure	e5b93d0a4b352a0

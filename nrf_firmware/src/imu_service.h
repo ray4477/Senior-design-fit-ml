@@ -1,6 +1,8 @@
 #ifndef BT_IMU_H_
 #define BT_IMU_H_
 
+#include <zephyr/drivers/sensor.h>
+
 #define BT_UUID_IMU_SERVICE_VAL BT_UUID_128_ENCODE(0x00001523, 0x1212, 0xefde, 0x1523, 0x785feabcd123)
 
 #define BT_UUID_IMU_SERVICE BT_UUID_DECLARE_128(BT_UUID_IMU_SERVICE_VAL)
@@ -35,8 +37,25 @@ struct my_lbs_cb {
 };
 /*end*/
 
-int imu_send_notify(uint32_t sensor_value);
+// struct for per device data
+struct imu_sensor_value {
+  int32_t integer;
+  int32_t fraction;
+};
+
+struct imu_data {
+  struct imu_sensor_value acc[3];
+  struct imu_sensor_value gyr[3];
+};
+struct wearable_packet {
+  struct imu_data data;
+  uint16_t foot_voltage;
+  uint8_t pos;
+};
+
+int imu_send_notify(struct sensor_value *acc, struct sensor_value *gyr);
 int imu_service_init(struct my_lbs_cb *callbacks);
+void max_mtu_on_conn(struct bt_conn *current_conn);
 #endif
 
 
