@@ -7754,6 +7754,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 35.56) (xy 92.71 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d572332d-9e34-4929-80c1-f92ee1f7132d")
+	)
+	(wire
+		(pts
 			(xy 157.48 83.82) (xy 157.48 86.36)
 		)
 		(stroke
@@ -8181,17 +8191,6 @@
 		)
 		(uuid "0310c0cf-85cd-4d59-a9e5-b03ce6dcbbf5")
 	)
-	(label "STAT"
-		(at 92.71 44.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "066af116-8a8d-47e7-9673-4a2a694fd51a")
-	)
 	(label "DCC"
 		(at 157.48 83.82 90)
 		(fields_autoplaced yes)
@@ -8268,6 +8267,17 @@
 			(justify left bottom)
 		)
 		(uuid "32d35aad-270f-4bbf-9413-555690575058")
+	)
+	(label "STAT"
+		(at 92.71 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "38aa608d-1b75-412d-8ceb-6506e380e21f")
 	)
 	(label "LED1"
 		(at 175.26 121.92 0)
@@ -10239,6 +10249,73 @@
 			(project "wearable_v2_nrf"
 				(path "/04076b6c-00f0-4736-97bb-31ddf474c7f4"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 92.71 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25842683-f657-4986-ac8b-4389148a72b0")
+		(property "Reference" "R16"
+			(at 95.758 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 98.298 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 90.932 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 92.71 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1d5dc780-a155-48a1-9855-046ab401bf03")
+		)
+		(pin "1"
+			(uuid "f2108e60-a769-4594-824b-8fa3e3d888c5")
+		)
+		(instances
+			(project "wearable_v2_nrf"
+				(path "/04076b6c-00f0-4736-97bb-31ddf474c7f4"
+					(reference "R16")
 					(unit 1)
 				)
 			)
