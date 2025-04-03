@@ -1,0 +1,13 @@
+# Target labels
+ custom_nrf_firmware
+# Source files and their labels
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/CMakeFiles/custom_nrf_firmware
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/CMakeFiles/custom_nrf_firmware.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/CMakeFiles/custom_nrf_firmware-complete.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/custom_nrf_firmware-prefix/src/custom_nrf_firmware-stamp/custom_nrf_firmware-build.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/custom_nrf_firmware-prefix/src/custom_nrf_firmware-stamp/custom_nrf_firmware-configure.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/custom_nrf_firmware-prefix/src/custom_nrf_firmware-stamp/custom_nrf_firmware-download.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/custom_nrf_firmware-prefix/src/custom_nrf_firmware-stamp/custom_nrf_firmware-install.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/custom_nrf_firmware-prefix/src/custom_nrf_firmware-stamp/custom_nrf_firmware-mkdir.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/custom_nrf_firmware-prefix/src/custom_nrf_firmware-stamp/custom_nrf_firmware-patch.rule
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/_sysbuild/sysbuild/images/custom_nrf_firmware-prefix/src/custom_nrf_firmware-stamp/custom_nrf_firmware-update.rule

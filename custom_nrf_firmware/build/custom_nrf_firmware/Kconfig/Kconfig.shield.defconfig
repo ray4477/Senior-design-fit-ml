@@ -1,0 +1,3 @@
+osource "C:/Users/raymo/nordic/boards/shields/*/Kconfig.defconfig"
+osource "C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/boards/shields/*/Kconfig.defconfig"
+osource "C:/ncs/v2.9.0/nrf/boards/shields/*/Kconfig.defconfig"

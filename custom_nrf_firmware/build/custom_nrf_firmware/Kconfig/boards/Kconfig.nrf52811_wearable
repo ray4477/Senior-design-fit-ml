@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "C:/Users/raymo/nordic/boards/fitml/nrf52811_wearable/Kconfig.nrf52811_wearable"

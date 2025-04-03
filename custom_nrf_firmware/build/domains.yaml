@@ -1,0 +1,7 @@
+default: custom_nrf_firmware
+build_dir: C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build
+domains:
+  - name: custom_nrf_firmware
+    build_dir: C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware
+flash_order:
+  - custom_nrf_firmware
