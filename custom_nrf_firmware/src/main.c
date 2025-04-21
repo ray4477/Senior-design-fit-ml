@@ -61,7 +61,7 @@ void send_data_thread(void)
 		if(imu_send_notify(acc, gyr)) {
     }
 
-		k_sleep(K_MSEC(200));
+		k_sleep(K_MSEC(16));
 	}
 }
 
@@ -71,7 +71,7 @@ void collect_imu_data_thread(void)
     if(get_imu_data(acc, gyr) == -1){
       // set_led(true);
     }
-    k_sleep(K_MSEC(100));
+    k_sleep(K_MSEC(10));
   }
 }
 

@@ -88,7 +88,7 @@ async def main():
     target_device = None
     
     for device in devices:
-        if device.name:  # Adjust this condition as needed
+        if device.name == 'IMU_wearable':  # Adjust this condition as needed
             target_device = device
             print(f"Found device: {device.address} - {device.name}")
             break
