@@ -74,6 +74,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/adc/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/bluetooth/cmake_install.cmake")
 endif()
 

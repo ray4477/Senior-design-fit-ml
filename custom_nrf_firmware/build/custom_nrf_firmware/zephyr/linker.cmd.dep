@@ -68,7 +68,6 @@ linker.cmd: \
  C:/ncs/v2.9.0/zephyr/include/zephyr/linker/kobject-rom.ld \
  C:/ncs/v2.9.0/zephyr/include/zephyr/linker/cplusplus-rom.ld \
  C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/include/generated/snippets-ram-sections.ld \
- c:\ncs\v2.9.0\zephyr\modules\segger\segger_rtt.ld \
  c:\ncs\v2.9.0\zephyr\arch\common\ramfunc.ld \
  C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/include/generated/snippets-ramfunc-section.ld \
  C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/include/generated/snippets-rwdata.ld \

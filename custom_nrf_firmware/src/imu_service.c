@@ -139,7 +139,7 @@ static char hello_world[] = "Hello, World!";
 static struct wearable_packet packet;
 
 //send imu data to the client
-int imu_send_notify(struct sensor_value *acc, struct sensor_value *gyr) 
+int imu_send_notify(struct sensor_value *acc, struct sensor_value *gyr, const uint16_t foot_mv[2])
 {
 	if (!notify_mysensor_enabled) {
 		return -EACCES;
@@ -158,8 +158,12 @@ int imu_send_notify(struct sensor_value *acc, struct sensor_value *gyr)
   packet.data.gyr[2].integer = gyr[2].val1;
   packet.data.gyr[2].fraction = gyr[2].val2;
 
-  packet.foot_voltage = 222;
-  packet.pos = 3;
+  packet.foot_voltage_1 = foot_mv[0];
+  packet.foot_voltage_2 = foot_mv[1];
+
+  //[left arm, right arm, left leg, right leg, head, back]
+  //[0,           1,        2,        3,         4,    5]
+  packet.pos = 1;
 
   return bt_gatt_notify(NULL, &imu_svc.attrs[7], &packet, sizeof(packet));
 

@@ -9,7 +9,7 @@
 #define USER_LED DK_LED3
 #define USER_BUTTON DK_BTN1_MSK
 
-#define STACKSIZE 512
+#define STACKSIZE 1024
 #define PRIORITY 7
 
 #define RUN_LED_BLINK_INTERVAL 1000
@@ -19,8 +19,8 @@
 static const struct bt_le_adv_param *adv_param = BT_LE_ADV_PARAM(
 	(BT_LE_ADV_OPT_CONNECTABLE |
 	 BT_LE_ADV_OPT_USE_IDENTITY), /* Connectable advertising and use identity address */
-	800, /* Min Advertising Interval 500ms (800*0.625ms) */
-	801, /* Max Advertising Interval 500.625ms (801*0.625ms) */
+	32, /* Min Advertising Interval 500ms (800*0.625ms) */
+	80, /* Max Advertising Interval 500.625ms (801*0.625ms) */
 	NULL); /* Set to NULL for undirected advertising */
 
 static const struct bt_data ad[] = {

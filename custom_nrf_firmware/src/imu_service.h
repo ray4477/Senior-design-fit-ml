@@ -49,11 +49,12 @@ struct imu_data {
 };
 struct wearable_packet {
   struct imu_data data;
-  uint16_t foot_voltage;
+  uint16_t foot_voltage_1;
+  uint16_t foot_voltage_2;
   uint8_t pos;
 };
 
-int imu_send_notify(struct sensor_value *acc, struct sensor_value *gyr);
+int imu_send_notify(struct sensor_value *acc, struct sensor_value *gyr, const uint16_t foot_mv[2]);
 int imu_service_init(struct my_lbs_cb *callbacks);
 void max_mtu_on_conn(struct bt_conn *current_conn);
 #endif

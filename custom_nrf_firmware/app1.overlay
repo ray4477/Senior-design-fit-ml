@@ -11,6 +11,36 @@
   };
 };
 
+/ {
+  zephyr,user {
+    io-channels = <&adc 0>, <&adc 1>;
+  };
+};
+
+/* foot pressure sensors */
+&adc {
+  #address-cells = <1>;
+  #size-cells = <0>;
+  status = "okay";
+
+  channel@0 {                       /* AIN4 / P0.28 */
+    reg = <0>;
+    zephyr,gain = "ADC_GAIN_1_6";
+    zephyr,reference = "ADC_REF_INTERNAL";
+    zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+    zephyr,input-positive = <NRF_SAADC_AIN4>;
+    zephyr,resolution = <12>;
+  };
+  channel@1 {                       /* AIN6 / P0.30 */
+    reg = <1>;
+    zephyr,gain = "ADC_GAIN_1_6";
+    zephyr,reference = "ADC_REF_INTERNAL";
+    zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+    zephyr,input-positive = <NRF_SAADC_AIN6>;
+    zephyr,resolution = <12>;
+  };
+};
+
 &pinctrl {
   i2c1_default_custom: i2c1_default_custom {
     group1 {

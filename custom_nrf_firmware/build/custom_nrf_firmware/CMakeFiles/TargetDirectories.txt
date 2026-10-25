@@ -186,6 +186,9 @@ C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/c
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/usb/common/nrf_usbd_common/CMakeFiles/rebuild_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/usb_c/CMakeFiles/edit_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/usb_c/CMakeFiles/rebuild_cache.dir
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/adc/CMakeFiles/drivers__adc.dir
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/adc/CMakeFiles/edit_cache.dir
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/adc/CMakeFiles/rebuild_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/bluetooth/CMakeFiles/drivers__bluetooth.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/bluetooth/CMakeFiles/edit_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/zephyr/drivers/bluetooth/CMakeFiles/rebuild_cache.dir
@@ -447,13 +450,10 @@ C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/c
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/open-amp/CMakeFiles/rebuild_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/picolibc/CMakeFiles/edit_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/picolibc/CMakeFiles/rebuild_cache.dir
-C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/segger/CMakeFiles/rebuild_cache.dir
-C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/segger/CMakeFiles/modules__segger.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/segger/CMakeFiles/edit_cache.dir
+C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/segger/CMakeFiles/rebuild_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/tinycrypt/CMakeFiles/edit_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/tinycrypt/CMakeFiles/rebuild_cache.dir
-C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/tinycrypt/lib/CMakeFiles/edit_cache.dir
-C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/tinycrypt/lib/CMakeFiles/rebuild_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/uoscore-uedhoc/CMakeFiles/edit_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/uoscore-uedhoc/CMakeFiles/rebuild_cache.dir
 C:/Users/raymo/Documents/GitHub/Senior-design-fit-ml/custom_nrf_firmware/build/custom_nrf_firmware/modules/zcbor/CMakeFiles/edit_cache.dir
