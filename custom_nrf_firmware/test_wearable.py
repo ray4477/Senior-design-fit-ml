@@ -2,6 +2,7 @@ import asyncio
 import shutil
 import struct
 import time
+import tkinter as tk
 from bleak import BleakScanner, BleakClient
 
 IMU_SERVICE_UUID = "00001523-1212-efde-1523-785feabcd123"
@@ -132,7 +133,72 @@ async def display_loop():
         print("\r" + line[:width].ljust(width), end="", flush=True)
 
 
+GUI_PERIOD = 0.03  # seconds between window refreshes
+MAX_VOLTS = 2.5    # voltage that shows fully red
+IDLE_RGB = (221, 221, 221)
+HOT_RGB = (255, 0, 0)
+
+# Which ADC channel sits under which part of the foot
+BALL_KEY, HEEL_KEY = "foot_voltage", "foot_voltage2"
+
+# Foot outline (toe at top) on a 260x520 canvas
+FOOT_OUTLINE = [
+    (130, 20), (170, 30), (195, 70), (200, 130), (190, 190), (175, 250),
+    (170, 320), (175, 390), (170, 450), (145, 495), (110, 495), (85, 450),
+    (80, 390), (85, 320), (75, 260), (55, 200), (55, 130), (70, 70), (95, 30),
+]
+BALL_CENTER, HEEL_CENTER, CIRCLE_R = (125, 150), (127, 440), 42
+
+
+def volts_to_color(volts):
+    """Blend from gray to red as volts goes from 0 to MAX_VOLTS."""
+    t = max(0.0, min(1.0, volts / MAX_VOLTS))
+    r, g, b = (round(lo + (hi - lo) * t) for lo, hi in zip(IDLE_RGB, HOT_RGB))
+    return f"#{r:02x}{g:02x}{b:02x}"
+
+
+class FootWindow:
+    def __init__(self):
+        self.root = tk.Tk()
+        self.root.title("Foot pressure")
+        self.closed = False
+        self.root.protocol("WM_DELETE_WINDOW", self._on_close)
+        self.canvas = tk.Canvas(self.root, width=260, height=560, bg="white", highlightthickness=0)
+        self.canvas.pack()
+        self.canvas.create_polygon(FOOT_OUTLINE, smooth=True, fill="#f3e0cc", outline="#555", width=2)
+        self.circles, self.labels = {}, {}
+        for key, (cx, cy) in ((BALL_KEY, BALL_CENTER), (HEEL_KEY, HEEL_CENTER)):
+            self.circles[key] = self.canvas.create_oval(
+                cx - CIRCLE_R, cy - CIRCLE_R, cx + CIRCLE_R, cy + CIRCLE_R,
+                fill=volts_to_color(0), outline="#333", width=2)
+            self.labels[key] = self.canvas.create_text(cx, cy, text="-- V", font=("Segoe UI", 12, "bold"))
+        self.canvas.create_text(130, 535, text=f"gray = 0 V, full red = {MAX_VOLTS} V", fill="#555")
+
+    def _on_close(self):
+        self.closed = True
+        self.root.destroy()
+
+    def update(self, packet):
+        if self.closed:
+            return
+        if packet:
+            for key in (BALL_KEY, HEEL_KEY):
+                if key in packet:
+                    volts = packet[key] / 1000
+                    self.canvas.itemconfig(self.circles[key], fill=volts_to_color(volts))
+                    self.canvas.itemconfig(self.labels[key], text=f"{volts:.2f} V")
+        self.root.update()
+
+
+async def gui_loop(window):
+    """Pump the Tk event loop and recolor the foot until the window is closed."""
+    while not window.closed:
+        window.update(latest["packet"])
+        await asyncio.sleep(GUI_PERIOD)
+
+
 async def main():
+    window = FootWindow()
     print("Scanning for devices...")
     devices = await BleakScanner.discover(return_adv=True)
     target_address = None
@@ -155,9 +221,13 @@ async def main():
         await client.start_notify(IMU_CHARACTERISTIC_UUID, notification_handler)
         print(f"Subscribed to notifications on {IMU_CHARACTERISTIC_UUID}")
 
+        tasks = [asyncio.create_task(display_loop()), asyncio.create_task(gui_loop(window))]
         try:
-            await display_loop()
+            # closing the window ends gui_loop, which stops the session
+            await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)
         finally:
+            for task in tasks:
+                task.cancel()
             await client.stop_notify(IMU_CHARACTERISTIC_UUID)
             print("\nStopped notifications and disconnected.")
 
